@@ -1,17 +1,19 @@
 {
   "name": "travel-blog-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "My travel blog's API",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "lint": "npx eslint ."
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/maximka76667/travel-blog-api.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Maxim Grivennyy",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/maximka76667/travel-blog-api/issues"
@@ -19,5 +21,11 @@
   "homepage": "https://github.com/maximka76667/travel-blog-api#readme",
   "dependencies": {
     "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4",
+    "nodemon": "^2.0.15"
   }
 }

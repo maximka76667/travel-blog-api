@@ -24,9 +24,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(requestLogger);
 
 // Routes
-app.get('/', (req, res) => {
-  res.send('Hello World!');
-});
+app.get('/', require('./routes/index'));
 
 // Error Logs
 app.use(errorLogger);

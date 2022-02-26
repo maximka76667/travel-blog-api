@@ -9,7 +9,7 @@ const articleSchema = new mongoose.Schema({
   description: {
     type: String,
   },
-  image: {
+  img: {
     type: String,
     required: true,
     validate: {
@@ -20,6 +20,12 @@ const articleSchema = new mongoose.Schema({
   content: {
     type: String,
     required: true,
+  },
+  linkName: {
+    type: String,
+    required: true,
+    unique: true,
+    // Do validation
   },
   versionKey: false,
 });
